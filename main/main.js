@@ -7,23 +7,41 @@ let paragraphs = document.querySelectorAll("p");
 let form = document.querySelector("form");
 
 
-// quand je rentre un truc dans mon input je le récupère dans mon JS
-// et ça lors de mon click sur le bouton correspondant
-// je vérifie que c'est bien un chiffre
-// le chiffre ajouté va aller s'additionner avec les chiffre existant dans une variable
-// et s'afficher dans le p de la section "classement"
-
-let score = 0;
-
 // pour chaque bouton je fais un addEventListener
-buttons.forEach((button) => {
+buttons.forEach((button, index) => {
   let score = 0;
+
   button.addEventListener("click", (e) => {
-    // le input correspondant au bouton = son frère direct
-    let closeInput = button.previousSibling.previousSibling;
-    // console.log(closeInput.value);
-    // j'ajoute mon score en faisant un parseInt pour le mettre en int
-    score = score + parseInt(closeInput.value);
-    // console.log(score)
+    // get the input of the corresponding button
+    let currentInput = getInput(button);
+    
+    // check if the inupt was fill with a number 
+    if (verifNumber(currentInput.value)) {
+      score = score + parseInt(currentInput.value);
+      console.log("coucou");
+      writeInP(index, score);
+    }
+
+    currentInput.value = "";
   });
 });
+
+
+function getInput(element) {
+  // le input correspondant au bouton = son frère direct
+  let closeInput = element.previousSibling.previousSibling;
+  // console.log(closeInput.value);
+  // console.log(score)
+  return closeInput;
+}
+
+function writeInP(index, score) {
+  let pTarget = paragraphs[index];
+  console.log(pTarget);
+  pTarget.innerHTML = score;
+}
+
+function verifNumber(valueToVerif) {
+  let numberPattern = /^[0-9]+$/; // RegEx qui correspond à un nombre entier positif
+  return numberPattern.test(valueToVerif);
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "harry";
+    src: url(../font/HARRYP__.TTF);
+}
+
+$fontTitle: "harry", sans-serif;
+
+@mixin marginAround{
+    margin: 1rem;
+}
+
+@mixin fontStyleTitle($fontSize){
+    font-size: $fontSize;
+    font-family: "harry", sans-serif;
+    color: white;
+    font-weight: 200;
+}

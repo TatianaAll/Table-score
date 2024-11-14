@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import '_variables.scss';
+
+@import '_title.scss';
+
+@import '_form.scss';
+
+.img{
+    width: 100%;
+}
+.imgContainer{
+    width: 10%;
+}
+
+body{
+    background-color: grey;
+}

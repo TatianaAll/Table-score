@@ -1,0 +1,10 @@
+h1{
+    @include fontStyleTitle(70px)
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "harry";
+  src: url(../font/HARRYP__.TTF);
+}
+h1 {
+  font-size: 70px;
+  font-family: "harry", sans-serif;
+  color: white;
+  font-weight: 200;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 10%;
+  background-color: grey;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+}
+
+.imgContainer {
+  width: 10%;
+}
+
+body {
+  background-color: grey;
+}/*# sourceMappingURL=style.css.map */

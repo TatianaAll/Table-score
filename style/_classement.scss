@@ -1,0 +1,21 @@
+section:last-of-type {
+    width: 45%;
+
+  h2 {
+    @include fontStyleTitle(50px);
+    text-align: center;
+  }
+  
+  div{
+    display: flex;
+    align-items: center;
+
+    div{
+       margin-right:1rem;
+    }
+
+    p{
+        @include fontStyleTitle(40px);
+    }
+  }
+}

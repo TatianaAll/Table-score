@@ -1,10 +1,31 @@
-button{
-    width: 10%;
-    background-color: grey;
-}
+section:first-of-type {
+  width: 45%;
+  form {
+    .inputContainer {
+      display: flex;
+      align-items: flex-end;
+      @include marginAround;
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      // width of the label containing images
+      .labelContainer {
+        width: 60%;
+        margin: auto;
+      }
+
+      input {
+        background-color: grey;
+        @include fontStyleTitle(40px);
+        border: none;
+        border-bottom: white 2px solid;
+        margin-right: 1rem;
+      }
+
+      // style of the buttons (containing images)
+      button {
+        width: 15%;
+        background-color: grey;
+        border: none;
+      }
+    }
+  }
 }

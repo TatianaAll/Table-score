@@ -9,7 +9,7 @@
   src: url(../font/HARRYP__.TTF);
 }
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "harry", sans-serif;
   color: white;
   font-weight: 200;
@@ -22,15 +22,56 @@ ul {
   align-items: center;
 }
 
-button {
-  width: 10%;
+section:first-of-type {
+  width: 45%;
+}
+section:first-of-type form .inputContainer {
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5rem;
+}
+section:first-of-type form .inputContainer .labelContainer {
+  width: 60%;
+  margin: auto;
+}
+section:first-of-type form .inputContainer input {
   background-color: grey;
+  font-size: 40px;
+  font-family: "harry", sans-serif;
+  color: white;
+  font-weight: 200;
+  border: none;
+  border-bottom: white 2px solid;
+  margin-right: 1rem;
+}
+section:first-of-type form .inputContainer button {
+  width: 15%;
+  background-color: grey;
+  border: none;
 }
 
-.flex {
+section:last-of-type {
+  width: 45%;
+}
+section:last-of-type h2 {
+  font-size: 50px;
+  font-family: "harry", sans-serif;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+section:last-of-type div {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+section:last-of-type div div {
+  margin-right: 1rem;
+}
+section:last-of-type div p {
+  font-size: 40px;
+  font-family: "harry", sans-serif;
+  color: white;
+  font-weight: 200;
 }
 
 .img {
@@ -43,4 +84,11 @@ button {
 
 body {
   background-color: grey;
+}
+body main {
+  display: flex;
+  justify-content: space-between;
+}
+body main section {
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -10,13 +10,6 @@
 
 @import '_form.scss';
 
-.img{
-    width: 100%;
-}
-.imgContainer{
-    width: 10%;
-}
+@import '_classement.scss';
 
-body{
-    background-color: grey;
-}
+@import '_main.scss';
